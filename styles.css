@@ -1,4 +1,5 @@
-.block{
+
+.game-block{
     width: 500px;
     height: 300px;
     border: 1px solid black;
@@ -7,8 +8,19 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+.game-over-block{
+    display: none;
+}
+p{
+    width: 100%;
+    text-align: center;
+}
+ #a-1, #a-2, #a-3, #a-4{
+    display: none;
+}
 
 button{
     width: 100px;
     height: 30px;
+   
 }
