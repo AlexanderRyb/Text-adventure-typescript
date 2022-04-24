@@ -20,8 +20,8 @@
       <p class="text-block">Question 1</p>
       <img />
       <button  onclick="showNextNodeA()">Correct</button>
-      <button  onclick="gameOver()">Wrong</button>
-      <button  onclick="gameOver()">Wrong</button>
+      <button  onclick="gameOver('you have been devoured by a sphinx.')">Wrong</button>
+      <button  onclick="gameOver('no.game over')">Wrong</button>
     </div>
     <div class="game-block" id="a-2">
       <p class="text-block">Question 2</p>
@@ -42,8 +42,8 @@
         <button  onclick="newGame()">Start again</button>
 
       </div>
-      <div class="game-block game-over-block" >
-        <p></p>
+      <div class="game-block" id="game-over-block">
+        <p id="game-over-message"></p>
         <button onclick="newGame()">Start again</button>
       </div>
   </body>

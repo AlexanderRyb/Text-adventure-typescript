@@ -20,7 +20,10 @@ function changeRoot(root) {
 }
 //function for branching to a different root?
 function gameOver(message) {
-    //current node display: none
+    document.getElementById(currentNode).style.display = "none";
+    document.getElementById("game-over-block").style.display = "flex"
+    document.getElementById('game-over-message').innerHTML = message
+
     //display game over node with passed message
 }
 function newGame() {
