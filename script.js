@@ -1,36 +1,28 @@
-// let textNodesRootA = [
-//     "step 1",
-//     "step 2",
-//     "step 3"
-// ]
-// currently visible node is stored here 
-var currentRoot = "a";
-var currentDigit = 0;
-var currentNode = currentRoot + "-" + currentDigit;
+// currently visible node is stored here
+var currentRoute = "a";
+var currentDigit = 1;
+var currentNode = currentRoute + "-" + currentDigit;
 function showNextNodeA() {
     console.log(currentNode);
     document.getElementById(currentNode).style.display = "none";
     currentDigit++;
-    currentNode = currentRoot + "-" + currentDigit;
+    currentNode = currentRoute + "-" + currentDigit;
     document.getElementById(currentNode).style.display = "flex";
 }
-function changeRoot(root) {
-    //new root id letter and 1
-    currentRoot = root;
+function changeRoute(route) {
+    //new route id letter and 1
+    currentRoute = route;
 }
-//function for branching to a different root?
+//function for branching to a different route?
 function gameOver(message) {
-    document.getElementById(currentNode).style.display = "none";
-    document.getElementById("game-over-block").style.display = "flex"
-    document.getElementById('game-over-message').innerHTML = message
-
+    //current node display: none
     //display game over node with passed message
 }
 function newGame() {
     document.getElementById(currentNode).style.display = "none";
-    currentRoot = "a";
-    currentDigit = 0;
-    currentNode = currentRoot + "-" + currentDigit;
-    document.getElementById("a-0").style.display = "flex";
+    currentRoute = "a";
+    currentDigit = 1;
+    currentNode = currentRoute + "-" + currentDigit;
+    document.getElementById("a-1").style.display = "flex";
 }
 //one function for every ending route?
