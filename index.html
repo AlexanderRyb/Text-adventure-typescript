@@ -19,11 +19,15 @@
     <div class="game-block" id="a-2">
       <p>
         -You wake up in a dark forest. Not a good place to be in. You should
-        probably try to get out. Luckily, you see a road.
+        probably try to get out.
       </p>
-      <img src="/images/dark_forest.jpg">
-      <button onclick="showNextNodeA()">Walk down the road.</button>
-      <button>Stay where you are.</button>
+        <img src="/images/dark_forest.png"  />
+      <div class="button-container">
+        <button onclick="showNextNodeA()">
+          Pick a direction and start walking.
+        </button>
+        <button>Stay where you are.</button>
+      </div>
     </div>
 
     <div class="game-block" id="a-3">
@@ -32,62 +36,63 @@
         with bird wings emerges from the forest. “Greetings traveler. I'm a
         sphinx. Solve my riddle or I will kill you.
       </p>
-      <img />
-      <button onclick="showNextNodeA()">Listen</button>
-      <button onclick="gameOver('You have been devoured by a sphinx.')">
-        I don't want to. Leave me alone
+      <img src="/images/sphinx.jpg" />
+      <button onclick="showNextNodeA()">Listen.</button>
+      <button onclick="gameOver(0)">
+        "I don't want to. Leave me alone"
       </button>
-      <button onclick="gameOver('no.game over')">Try to get past</button>
+      <button onclick="gameOver(1)">Try to get past</button>
     </div>
     <div class="game-block" id="a-4">
       <p class="text-block">
-        -Sphinx continues: “Which creature has one voice and yet becomes
+        Sphinx continues: “Which creature has one voice and yet becomes
         four-footed and two-footed and three-footed?”
       </p>
-      <img />
-      <button onclick="gameOver()">I don't know</button>
-      <button onclick="gameOver()">How about you just let me go?</button>
-      <button onclick="gameOver()">
-        Ughhh…it's…(mumble something incoherently)
+      <img src="/images/sphinx.jpg" />
+
+      <button onclick="gameOver(2)">"I don't know."</button>
+      <button onclick="gameOver(3)">"How about you just let me go?"</button>
+      <button onclick="gameOver(4)">
+        "Ughhh…it's…"[mumble something incoherently]
       </button>
       <button onclick="showNextNodeA()">
-        Man—who crawls on all fours as a baby, then walks on two feet as an
-        adult, and then uses a walking stick in old age
+        "Man—who crawls on all fours as a baby, then walks on two feet as an
+        adult, and then uses a walking stick in old age.""
       </button>
     </div>
     <div class="game-block" id="a-5">
-      <p class="text-block">Correct! You can proceed</p>
-      <img />
-      <button onclick="showNextNodeA()">Keep walking</button>
+      <p class="text-block">"Correct!" The creature allows you to proceed.</p>
+      <img src="/images/sphinx.jpg" />
+      <button onclick="showNextNodeA()">Keep walking.</button>
     </div>
     <div class="game-block" id="a-6">
       <p class="text-block">
         You walk some more. You hear the sound of rushing water and soon you
         arrive at a river. Luckily, there's a bridge. Unluckily, there's a
-        strange creature guarding it.
+        monster guarding it.
       </p>
-      <button onclick="showNextNodeA()">Come closer</button>
+      <button onclick="showNextNodeA()">Approach it.</button>
     </div>
     <div class="game-block" id="a-7">
       <p class="text-block">
-        -As you step cautiously on the bridge, the creature notices you. “I'm a
+        -As you step cautiously on the bridge, the it notices you. “I'm a
         bridge troll. Solve my riddle or I will bite your head off.”
       </p>
-      <button onclick="gameOver()">
-        Not again [Jump off the bridge and try to swim to the other side]
+      <button onclick="gameOver(5)">
+        "Not again" [Jump off the bridge and try to swim to the other side]
       </button>
-      <button onclick="showNextNodeA()">What is it?</button>
+      <button onclick="showNextNodeA()">"I hope it's not too difficut"</button>
     </div>
     <div class="game-block" id="a-8">
       <p class="text-block">
         “I always run but never walk, often murmur, never talk, have a bed but
         never sleep, have a mouth but never eat. Who am I?”
       </p>
-      <button onclick="gameOver()">
-        Say nothing and start slowly stepping backwards
+      <button onclick="gameOver(6)">
+        Say nothing and start slowly stepping backwards.
       </button>
-      <button onclick="gameOver()">Could you just let me go, please?</button>
-      <button onclick="showNextNodeA()">A river?</button>
+      <button onclick="gameOver(7)">"Could you just let me go, please?"</button>
+      <button onclick="showNextNodeA()">"A river?"</button>
     </div>
     <div class="game-block" id="a-9">
       <p class="text-block">That's right. Good job.</p>
@@ -95,7 +100,9 @@
       <button onclick="showNextNodeA()">Keep walking</button>
     </div>
     <div class="game-block" id="a-10">
-      <p class="text-block">You managed to get out of the forest. Congratulations!</p>
+      <p class="text-block">
+        You managed to get out of the forest. Congratulations!
+      </p>
       <img />
       <button onclick="newGame()">Start again?</button>
     </div>

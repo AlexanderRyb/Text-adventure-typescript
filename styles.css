@@ -1,63 +1,81 @@
-body{
-    background-color: #121315;
-
+body {
+  background-color: #121315;
 }
 
-.game-block{
-    width: 600px;
-    height: 400px;
-    margin: 200px auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
-    
-    background-color:#191a1c;
-    border-radius: 10px;
-
+.game-block {
+  width: 50%;
+  max-height: 50vh;
+  margin: 150px auto;
+  display: block;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  background-color: #191a1c;
+  border-radius: 10px;
 }
-#game-over-block{
-    display: none;
+#game-over-block {
+  display: none;
 }
-p{
-    width: 100%;
-    text-align: center;
-    font-size: 24px;
-    font-family: brandon-grotesque, sans-serif;
-
-    color: rgb(228, 224, 224)
-
+.text-block {
+  height: 33%;
 }
-h1{
-    width: 100%;
-    text-align: center;
-    font-family: brandon-grotesque, sans-serif;
-    color: rgb(228, 224, 224)
+p {
+  width: 100%;
+  height: 33%;
+  text-align: center;
+  font-size: 24px;
+  font-family: brandon-grotesque, sans-serif;
 
-
+  color: rgb(228, 224, 224);
 }
- #a-2, #a-3, #a-4,#a-5, #a-6, #a-7, #a-8, #a-9, #a-10{
-    display: none;
+h1 {
+  width: 100%;
+  text-align: center;
+  font-family: brandon-grotesque, sans-serif;
+  color: rgb(228, 224, 224);
+}
+#a-2,
+#a-3,
+#a-4,
+#a-5,
+#a-6,
+#a-7,
+#a-8,
+#a-9,
+#a-10 {
+  display: none;
 }
 
-img{
-    width: 100%;
-    height: 200px;
-}
 
-button{
-    width: auto;
-    padding-left: 20px;
-    padding-right: 20px;
-    height: 15%;
-    color: white;
-    background-color:#191a1c;
-    border: 2px solid  rgb(153, 153, 153);
-    border-radius: 4px;
-    font-size: 20px;
-    font-family: brandon-grotesque, Helvetica, sans-serif;   
-}
-button:hover{
-   background-color: #444444
 
+img {
+    max-width: 50%;
+    max-height:13%;
+
+  background-image: url(/images/dark_forest.png);
+}
+.button-container {
+  margin-top: 20px;
+  width: 100%;
+  height: 33%;
+  display: flex;
+
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+button {
+  width: 100%;
+  border-style: none;
+  border-bottom: 1px solid #e2e3de;
+
+  padding: 5px 20px;
+  height: auto;
+  color: white;
+  background-color: #191a1c;
+  font-size: 20px;
+  text-align: start;
+  font-family: brandon-grotesque, Helvetica, sans-serif;
+}
+button:hover {
+  background-color: #444444;
 }
